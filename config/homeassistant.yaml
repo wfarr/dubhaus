@@ -1,0 +1,11 @@
+---
+homeassistant:
+  name: Home
+  latitude: 33.7773
+  longitude: -84.3366
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 285
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York

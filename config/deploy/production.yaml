@@ -1,0 +1,42 @@
+homeassistant: !include homeassistant.yaml
+
+#discovery:
+frontend:
+history:
+logbook:
+updater:
+zeroconf:
+
+zone: !include zone.yaml
+group: !include groups.yaml
+#scene: !include scenes.yaml
+#scene directory: !include_dir_list scenes
+#script: !include_dir_named scripts
+#automation: !include_dir_merge_list automations
+
+http: !include http.yaml
+#mqtt: !include mqtt.yaml
+
+notify slack: !include notify-slack.yaml
+
+#device_tracker: !include device_trackers.yaml
+#input_select: !include input_selects.yaml
+light hue: !include hue.yaml
+#ecobee: !include ecobee.yaml
+nest: !include nest.yaml
+#emulated_hue: !include emulated_hue.yaml
+#sleepiq: !include sleepiq.yaml
+media_player sonos: !include sonos.yaml
+sensor darksky: !include darksky.yaml 
+#sensor onlinedness: !include sensor-onlinedness.yaml
+#sensor speedtest: !include speedtest.yaml
+#sensor bedtime: !include bedtime-sensor.yaml
+#shell_command: !include_dir_merge_named shell_commands
+sun:
+#switch harmony hub: !include harmony-switches.yaml
+#switch house modes: !include template_switches.yaml
+#switch broadlinky: !include broadlinky-switches.yaml
+#vera: !include vera.yaml
+
+# input_boolean: !include christmas-cheer-input-boolean.yaml
+# switch cheer: !include christmas-cheer-switch.yaml

@@ -1,0 +1,10 @@
+---
+platform: darksky
+api_key: !secret darksky_api_key
+monitored_conditions:
+  - summary
+  - precip_probability
+  - temperature
+  - apparent_temperature
+  - cloud_cover
+  - humidity

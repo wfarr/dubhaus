@@ -1,0 +1,33 @@
+---
+dashboard:
+  view: yes
+  entities:
+  - group.downstairs
+  - group.weather
+  # - group.thermostat
+
+downstairs:
+  entities:
+  - light.living_room_1
+  - light.living_room_2
+  - light.kitchen_1
+  - light.kitchen_2
+  - light.kitchen_3
+  - light.kitchen_4
+  - light.kitchen_island_1
+  - light.kitchen_island_2
+
+weather:
+  name: Weather Forecast
+  entities:
+    - sensor.weather_summary
+    - sensor.weather_temperature
+    - sensor.weather_cloud_coverage
+    - sensor.weather_humidity
+    - sensor.weather_precip_probability
+    - sensor.weather_apparent_temperature
+
+# thermostat:
+#   name: Thermostats
+#   entities:
+#   - sensor.nest_temperature
