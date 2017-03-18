@@ -6,7 +6,7 @@
   action:
   - service: notify.slack
     data:
-      message: ":unlock: Someone just unlocked the front door"
+      message: ":unlock: Someone just unlocked the front door!"
 
 - alias: Notify Slack when the front door is locked
   trigger:
@@ -16,4 +16,15 @@
   action:
   - service: notify.slack
     data:
-      message: ":unlock: Someone just unlocked the front door"
+      message: ":lock: The front door is locked now!"
+
+- alias: Lock battery level
+  trigger:
+    platform: numeric_state
+    entity_id: lock.schlage_deadbolt_3
+    value_template: '{{ float(state.attributes.battery_level[:-1]) }}'
+    below: 10.0
+  action:
+  - service: notify.slack
+    data:
+      message: ":battery: Front door lock batteries are below 10%, replace ASAP!"
