@@ -10,5 +10,7 @@ sudo cp -a $root/REVISION $HA_CONFIG_DIR/.DUBHAUS_VERSION
 sudo cp -a $root/config/deploy/production.yaml $HA_CONFIG_DIR/configuration.yaml
 sudo cp -a /home/pi/secrets.yaml $HA_CONFIG_DIR/secrets.yaml
 
-sudo chown homeassistant:homeassistant $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/automations/*.yaml
-sudo chmod 644 $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/automations/*.yaml
+sudo chown homeassistant:homeassistant $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/automations/*.yaml $HA_CONFIG_DIR/scripts/*.yaml
+sudo chmod 644 $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/automations/*.yaml $HA_CONFIG_DIR/scripts/*.yaml
+
+sudo systemctl restart home-assistant@homeassistant.service
