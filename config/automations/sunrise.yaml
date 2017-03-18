@@ -1,0 +1,9 @@
+- alias: Sunrise
+  trigger:
+    platform: sun
+    event: sunrise
+  action: 
+    service: script.scene_and_notify
+    data:
+      scene: Energize
+      message: ":city_sunset:"
