@@ -1,9 +1,0 @@
-- alias: Test out some Slack integration
-  trigger:
-    platform: state
-    entity_id: light.dining_room
-    state: 'on'
-  action:
-  - service: notify.slack
-    data:
-      message: ":boom: shit works yo"
