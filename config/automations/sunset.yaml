@@ -5,5 +5,5 @@
   action: 
     service: script.scene_and_notify
     data:
-      scene: Relax
-      message: ":city_sunset:"
+      scene: "Relax"
+      message: ":city_sunset: Turning the lights down a notch..."

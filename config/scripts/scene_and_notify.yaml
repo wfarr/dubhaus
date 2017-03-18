@@ -1,7 +1,7 @@
 sequence:
 - service: light.hue_activate_scene
   data_template:
-    group_name: "Home"
+    group_name: "literally everything"
     scene_name: "{{scene}}"
 - service: notify.slack
   data_template:
