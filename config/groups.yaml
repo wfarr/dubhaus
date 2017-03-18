@@ -15,6 +15,7 @@ downstairs:
   - light.living_room
   - light.kitchen
   - light.entryway
+  - media_player.kitchen
 
 upstairs:
   entities:
@@ -25,6 +26,8 @@ upstairs:
   - light.guest_bedroom
   - light.upstairs_landing
   - light.upper_stairway
+  # need to rename this, it's in the bedroom atm
+  - media_player.living_room
 
 weather:
   name: Weather Forecast
