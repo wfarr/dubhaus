@@ -3,31 +3,34 @@ dashboard:
   view: yes
   entities:
   - group.downstairs
+  - group.upstairs
   - group.weather
-  # - group.thermostat
 
 downstairs:
   entities:
-  - light.living_room_1
-  - light.living_room_2
-  - light.kitchen_1
-  - light.kitchen_2
-  - light.kitchen_3
-  - light.kitchen_4
-  - light.kitchen_island_1
-  - light.kitchen_island_2
+  - sensor.living_room_thermostat_temperature
+  - sensor.living_room_thermostat_target
+  - sensor.living_room_thermostat_humidity
+  - light.dining_room
+  - light.living_room
+  - light.kitchen
+  - light.entryway
+
+upstairs:
+  entities:
+  - sensor.upstairs_thermostat_temperature
+  - sensor.upstairs_thermostat_target
+  - sensor.upstairs_thermostat_humidity
+  - light.master_bedroom
+  - light.guest_bedroom
+  - light.upstairs_landing
+  - light.upper_stairway
 
 weather:
   name: Weather Forecast
   entities:
-    - sensor.weather_summary
-    - sensor.weather_temperature
-    - sensor.weather_cloud_coverage
-    - sensor.weather_humidity
-    - sensor.weather_precip_probability
-    - sensor.weather_apparent_temperature
-
-# thermostat:
-#   name: Thermostats
-#   entities:
-#   - sensor.nest_temperature
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_apparent_temperature
