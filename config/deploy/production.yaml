@@ -17,7 +17,7 @@ group: !include groups.yaml
 http: !include http.yaml
 #mqtt: !include mqtt.yaml
 
-notify slack: !include notify-slack.yaml
+notify slack: !include slack.yaml
 
 #device_tracker: !include device_trackers.yaml
 #input_select: !include input_selects.yaml
