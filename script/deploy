@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# God forgive me
+
+revision=$(git rev-parse --short HEAD)
+root=$(cd $(dirname $0)/.. && pwd)
+
+cd $root
+mkdir -p $root/.tmp
+
+echo "$revision" > REVISION
+git archive --format=tar --output=$root/.tmp/$revision.tar $revision
+
+scp $root/.tmp/$revision.tar pi@hassbian.local:/home/pi/$revision.tar
+scp $root/config/secrets.yaml pi@hassbian.local:/home/pi/secrets.yaml
+
+ssh pi@hassbian.local -- mkdir -p /home/pi/dubhaus/$revision
+ssh pi@hassbian.local -- tar xf /home/pi/$revision.tar -C /home/pi/dubhaus/$revision
+ssh pi@hassbian.local -- /home/pi/dubhaus/$revision/script/deploy-local
