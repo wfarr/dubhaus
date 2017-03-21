@@ -1,7 +1,7 @@
 ---
 name: Home
-latitude: 33.7773
-longitude: -84.3366
+latitude: !secret latitude
+longitude: !secret longitude
 # Impacts weather/sunrise data (altitude above sea level in meters)
 elevation: 285
 # metric for Metric, imperial for Imperial
