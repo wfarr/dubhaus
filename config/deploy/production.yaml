@@ -9,8 +9,8 @@ zeroconf:
 
 zone: !include zone.yaml
 group: !include groups.yaml
-#scene: !include scenes.yaml
-#scene directory: !include_dir_list scenes
+scene: !include scenes.yaml
+scene directory: !include_dir_list scenes
 script: !include_dir_named scripts
 automation: !include_dir_merge_list automations
 
@@ -34,7 +34,7 @@ sensor darksky: !include darksky.yaml
 #shell_command: !include_dir_merge_named shell_commands
 sun:
 #switch harmony hub: !include harmony-switches.yaml
-#switch house modes: !include template_switches.yaml
+switch house modes: !include template_switches.yaml
 #switch broadlinky: !include broadlinky-switches.yaml
 vera: !include vera.yaml
 

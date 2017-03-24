@@ -98,6 +98,18 @@ guest_bedroom:
 ########## LIGHTS ##########
 ############################
 
+all_lights:
+  name: All Lights
+  entities:
+  - group.entryway_lights
+  - group.dining_room_lights
+  - group.kitchen_lights
+  - group.living_room_lights
+  - group.upper_stairway_lights
+  - group.upstairs_landing_lights
+  - group.guest_bedroom_lights
+  - group.master_bedroom_lights
+
 entryway_lights:
   name: Entryway Lights
   entities:

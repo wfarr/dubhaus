@@ -1,0 +1,14 @@
+name: Gaming Mode
+entities:
+  group.living_room_lights:
+    state: on
+    brightness: 142
+    rgb_color: [255, 95, 73]
+  group.dining_room_lights:
+    state: on
+    brightness: 142
+    rgb_color: [175, 201, 242]
+  group.kitchen_lights:
+    state: on
+    brightness: 142
+    rgb_color: [217, 190, 150]

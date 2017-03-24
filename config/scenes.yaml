@@ -1,0 +1,30 @@
+- name: All Concentrate
+  entities:
+    group.all_lights:
+      state: on
+      brightness: 254
+      xy_color: [0.3691, 0.3719]
+
+- name: All Energize
+  entities:
+    group.all_lights:
+      state: on
+      brightness: 254
+      xy_color: [0.3314, 0.3301]
+
+- name: All Relax
+  entities:
+    group.all_lights:
+      state: on
+      brightness: 144
+      xy_color: [0.519, 0.4152]
+
+- name: All On
+  entities:
+    group.all_lights:
+      state: on
+
+- name: All Off
+  entities:
+    group.all_lights:
+      state: off
