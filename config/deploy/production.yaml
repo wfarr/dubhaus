@@ -24,7 +24,7 @@ notify slack: !include slack.yaml
 light hue: !include hue.yaml
 #ecobee: !include ecobee.yaml
 nest: !include nest.yaml
-#emulated_hue: !include emulated_hue.yaml
+emulated_hue: !include emulated_hue.yaml
 #sleepiq: !include sleepiq.yaml
 media_player sonos: !include sonos.yaml
 sensor darksky: !include darksky.yaml 
