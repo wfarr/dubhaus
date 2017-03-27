@@ -8,7 +8,7 @@ sudo rm -rf $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/{automations,custom_components,
 
 sudo cp -a $root/config/*.yaml $HA_CONFIG_DIR/
 
-for d in automations custom_components scripts; do
+for d in automations custom_components scenes scripts; do
   sudo cp -a $root/config/$d $HA_CONFIG_DIR/
 done
 
@@ -17,6 +17,6 @@ sudo cp -a $root/config/deploy/production.yaml $HA_CONFIG_DIR/configuration.yaml
 sudo cp -a /home/pi/secrets.yaml $HA_CONFIG_DIR/secrets.yaml
 
 sudo chown homeassistant:homeassistant $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/{automations,custom_components,scripts}/*.yaml
-sudo chmod 644 $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/{automations,custom_components,scripts}/*.yaml
+sudo chmod 644 $HA_CONFIG_DIR/*.yaml $HA_CONFIG_DIR/{automations,custom_components,scenes,scripts}/*.yaml
 
 sudo systemctl restart home-assistant@homeassistant.service
