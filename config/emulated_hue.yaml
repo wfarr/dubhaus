@@ -1,3 +1,4 @@
-type: alexa
+type: google_home
+listen_port: 80
 exposed_domains:
 - switch
