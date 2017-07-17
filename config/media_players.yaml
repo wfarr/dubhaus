@@ -1,5 +1,12 @@
 ---
 - platform: webostv
+  mac: "14:c9:13:b1:e3:b3"
+  name: "Living Room TV"
+  customize:
+    sources:
+      - livetv
+      - youtube
+      - netflix
 
 - platform: sonos
 
