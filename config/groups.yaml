@@ -95,12 +95,14 @@ upstairs_landing:
   - sensor.upstairs_thermostat_humidity
 
 master_bedroom:
+  view: yes
   name: Master Bedroom
   entities:
   - group.master_bedroom_lights
   - media_player.sonos_master_bedroom
 
 guest_bedroom:
+  view: yes
   name: Guest Bedroom
   entities:
   - group.guest_bedroom_lights
