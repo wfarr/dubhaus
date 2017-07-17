@@ -31,6 +31,7 @@ media_players:
 ############################
 
 downstairs:
+  view: yes
   name: Downstairs
   entities:
   - group.dining_room
@@ -39,6 +40,7 @@ downstairs:
   - group.living_room
 
 upstairs:
+  view: yes
   name: Upstairs
   entities:
   - group.guest_bedroom
