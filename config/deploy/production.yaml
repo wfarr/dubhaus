@@ -26,7 +26,7 @@ light hue: !include hue.yaml
 nest: !include nest.yaml
 emulated_hue: !include emulated_hue.yaml
 #sleepiq: !include sleepiq.yaml
-media_player sonos: !include sonos.yaml
+media_player: !include media_players.yaml
 sensor darksky: !include darksky.yaml 
 #sensor onlinedness: !include sensor-onlinedness.yaml
 #sensor speedtest: !include speedtest.yaml
