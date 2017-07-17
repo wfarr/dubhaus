@@ -26,6 +26,15 @@ media_players:
   - media_player.sonos_kitchen
   - media_player.sonos_master_bedroom
 
+downstairs_media_players:
+  entities:
+  - media_player.living_room_tv
+  - media_player.sonos_kitchen
+
+upstairs_media_players:
+  entities:
+  - media_player.sonos_master_bedroom
+
 ############################
 ########## ZONES ###########
 ############################
@@ -34,19 +43,15 @@ downstairs:
   view: yes
   name: Downstairs
   entities:
-  - group.dining_room
-  - group.entryway
-  - group.kitchen
-  - group.living_room
+  - group.downstairs_lights
+  - group.downstairs_media_players
 
 upstairs:
   view: yes
   name: Upstairs
   entities:
-  - group.guest_bedroom
-  - group.master_bedroom
-  - group.stairs
-  - group.upstairs_landing
+  - group.upstairs_lights
+  - group.upstairs_media_players
 
 ############################
 ########## ROOMS ###########
