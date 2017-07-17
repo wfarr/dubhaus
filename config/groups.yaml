@@ -35,6 +35,19 @@ upstairs_media_players:
   entities:
   - media_player.sonos_master_bedroom
 
+downstairs_sensors:
+  entities:
+  - sensor.living_room_thermostat_temperature
+  - sensor.living_room_thermostat_target
+  - sensor.living_room_thermostat_humidity
+
+upstairs_sensors:
+  entities:
+  - sensor.upstairs_thermostat_temperature
+  - sensor.upstairs_thermostat_target
+  - sensor.upstairs_thermostat_humidity
+
+
 ############################
 ########## ZONES ###########
 ############################
@@ -45,6 +58,7 @@ downstairs:
   entities:
   - group.downstairs_lights
   - group.downstairs_media_players
+  - group.downstairs_sensors
 
 upstairs:
   view: yes
@@ -52,6 +66,7 @@ upstairs:
   entities:
   - group.upstairs_lights
   - group.upstairs_media_players
+  - group.upstairs_sensors
 
 ############################
 ########## ROOMS ###########
@@ -69,14 +84,11 @@ kitchen:
   - media_player.sonos_kitchen
 
 living_room:
-  view: yes
   name: Living Room
   entities:
   - media_player.living_room_tv
   - group.living_room_lights
-  - sensor.living_room_thermostat_temperature
-  - sensor.living_room_thermostat_target
-  - sensor.living_room_thermostat_humidity
+  - group.downstairs_sensors
 
 dining_room:
   name: Dining Room
@@ -95,9 +107,7 @@ upstairs_landing:
   name: Upstairs Landing
   entities:
   - group.upstairs_landing_lights
-  - sensor.upstairs_thermostat_temperature
-  - sensor.upstairs_thermostat_target
-  - sensor.upstairs_thermostat_humidity
+  - group.upstairs_sensors
 
 master_bedroom:
   view: yes
