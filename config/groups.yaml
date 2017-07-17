@@ -2,9 +2,14 @@
 dashboard:
   view: yes
   entities:
-  - group.downstairs
-  - group.upstairs
   - group.weather
+  - camera.living_room
+  - group.all_locks
+  - media_player.living_room_tv
+  - media_player.sonos_kitchen
+  - media_player.sonos_master_bedroom
+  - group.downstairs_lights
+  - group.upstairs_lights
 
 ############################
 ########### MISC ###########
