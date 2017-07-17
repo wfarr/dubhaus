@@ -36,7 +36,8 @@ sun:
 #switch harmony hub: !include harmony-switches.yaml
 switch house modes: !include template_switches.yaml
 #switch broadlinky: !include broadlinky-switches.yaml
-vera: !include vera.yaml
 
 # input_boolean: !include christmas-cheer-input-boolean.yaml
 # switch cheer: !include christmas-cheer-switch.yaml
+
+zwave: !include zwave.yaml
