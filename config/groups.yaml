@@ -5,9 +5,7 @@ dashboard:
   - group.weather
   - group.cameras
   - group.all_locks
-  - media_player.living_room_tv
-  - media_player.sonos_kitchen
-  - media_player.sonos_master_bedroom
+  - group.media_players
   - group.downstairs_lights
   - group.upstairs_lights
 
@@ -40,8 +38,14 @@ weather:
     - sensor.dark_sky_precip_probability
     - sensor.dark_sky_apparent_temperature
 
-media_players:
+media:
   view: yes
+  entities:
+  - media_player.living_room_tv
+  - media_player.sonos_kitchen
+  - media_player.sonos_master_bedroom
+
+media_players:
   entities:
   - media_player.living_room_tv
   - media_player.sonos_kitchen
