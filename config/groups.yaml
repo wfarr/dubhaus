@@ -87,7 +87,7 @@ master_bedroom:
   name: Master Bedroom
   entities:
   - group.master_bedroom_lights
-  - media_player.living_room #misnomer
+  - media_player.master_bedroom
 
 guest_bedroom:
   name: Guest Bedroom
