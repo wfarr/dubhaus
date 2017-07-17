@@ -4,7 +4,7 @@ dashboard:
   entities:
   - group.weather
   - group.cameras
-  - lock.schlage_deadbolt_3
+  - group.all_locks
   - group.media_players
   - group.downstairs_lights
   - group.upstairs_lights
@@ -27,7 +27,7 @@ security:
   name: Security
   entities:
   - camera.living_room
-  - lock.schlage_deadbolt_3
+  - group.all_locks
 
 weather:
   name: Weather Forecast
