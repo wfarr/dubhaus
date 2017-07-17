@@ -120,7 +120,6 @@ downstairs_lights:
   - group.kitchen_lights
   - group.living_room_lights
 
-
 entryway_lights:
   name: Entryway Lights
   entities:
@@ -161,6 +160,7 @@ living_room_lights:
   entities:
   - light.living_room_1
   - light.living_room_2
+  - light.living_room_floor_lamp
 
 upper_stairway_lights:
   name: Upper Stairway Lights
