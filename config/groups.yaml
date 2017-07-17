@@ -57,6 +57,7 @@ kitchen:
 living_room:
   name: Living Room
   entities:
+  - media_player.living_room_tv
   - group.living_room_lights
   - sensor.living_room_thermostat_temperature
   - sensor.living_room_thermostat_target
