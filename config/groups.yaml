@@ -10,6 +10,13 @@ dashboard:
 ########### MISC ###########
 ############################
 
+security:
+  view: yes
+  name: Security
+  entities:
+  - camera.living_room
+  - group.all_locks
+
 weather:
   name: Weather Forecast
   entities:
