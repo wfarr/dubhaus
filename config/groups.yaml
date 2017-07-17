@@ -52,7 +52,7 @@ kitchen:
   name: Kitchen
   entities:
   - group.kitchen_lights
-  - media_player.kitchen
+  - media_player.sonos_kitchen
 
 living_room:
   view: yes
@@ -89,7 +89,7 @@ master_bedroom:
   name: Master Bedroom
   entities:
   - group.master_bedroom_lights
-  - media_player.master_bedroom
+  - media_player.sonos_master_bedroom
 
 guest_bedroom:
   name: Guest Bedroom
