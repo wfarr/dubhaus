@@ -10,6 +10,12 @@ unit_system: imperial
 time_zone: America/New_York
 
 customize:
+  group.all_lights:
+    emulated_hue: true
+  group.upstairs_lights:
+    emulated_hue: true
+  group.downstairs_lights:
+    emulated_hue: true
   group.entryway_lights:
     emulated_hue: true
   group.dining_room_lights:
