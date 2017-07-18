@@ -1,22 +1,18 @@
-- alias: Notify Slack when the front door is unlocked
+- alias: Register door codes
   trigger:
-    platform: state
-    entity_id: lock.schlage_deadbolt_3
-    state: 'unlocked'
+    platform: homeassistant
+    event: start
   action:
-  - service: notify.slack
+  - service: script.register_door_access_code
     data:
-      message: ":unlock: Someone just unlocked the front door!"
-
-- alias: Notify Slack when the front door is locked
-  trigger:
-    platform: state
-    entity_id: lock.schlage_deadbolt_3
-    state: 'locked'
-  action:
-  - service: notify.slack
+      description: "Will Farrington"
+      slot: 2
+      code: !secret front_door_access_will_farrington
+  - service: script.register_door_access_code
     data:
-      message: ":lock: The front door is locked now!"
+      description: "Andrew Thomas"
+      slot: 3
+      code: !secret front_door_access_andrew_thomas
 
 # - alias: Notify Slack when the front door is unlocked
 #   trigger:
