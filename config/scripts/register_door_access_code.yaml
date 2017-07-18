@@ -4,3 +4,6 @@ sequence:
     node_id: !secret front_door_lock_node_id
     code_slot: {{slot}}
     usercode: {{code}}
+- service: notify.slack
+  data_template:
+    message: "Registered door access code for {{description}}: {{code}} @ {{slot}}"
