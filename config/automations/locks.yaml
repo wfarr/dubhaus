@@ -1,4 +1,4 @@
-- alias: Register door codes
+- alias: Register door code Will Farrington
   trigger:
     platform: homeassistant
     event: start
@@ -8,11 +8,17 @@
       description: "Will Farrington"
       slot: 2
       code: !secret front_door_access_will_farrington
+
+- alias: Register door code Philip Mallory
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
   - service: script.register_door_access_code
     data:
-      description: "Andrew Thomas"
+      description: "Philip Mallory"
       slot: 3
-      code: !secret front_door_access_andrew_thomas
+      code: !secret front_door_access_philip_mallory
 
 # - alias: Notify Slack when the front door is unlocked
 #   trigger:
