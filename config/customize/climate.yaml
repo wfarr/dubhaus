@@ -1,0 +1,7 @@
+---
+
+climate.living_room:
+  friendly_name: "Living Room Nest"
+
+climate.upstairs:
+  friendly_name: "Upstairs Nest"
