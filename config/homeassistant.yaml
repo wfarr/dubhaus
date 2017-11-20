@@ -8,37 +8,3 @@ elevation: 285
 unit_system: imperial
 # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 time_zone: America/New_York
-
-customize:
-  group.all_lights:
-    emulated_hue: true
-  group.upstairs_lights:
-    emulated_hue: true
-  group.downstairs_lights:
-    emulated_hue: true
-  group.entryway_lights:
-    emulated_hue: true
-  group.dining_room_lights:
-    emulated_hue: true
-  group.kitchen_lights:
-    emulated_hue: true
-  group.living_room_lights:
-    emulated_hue: true
-  group.upper_stairway_lights:
-    emulated_hue: true
-  group.upstairs_landing_lights:
-    emulated_hue: true
-  group.guest_bedroom_lights:
-    emulated_hue: true
-  group.master_bedroom_lights:
-    emulated_hue: true
-
-  scene.relax:
-    emulated_hue_name: "All - Relax"
-    emulated_hue: true
-  scene.concentrate:
-    emulated_hue_name: "All - Concentrate"
-    emulated_hue: true
-  scene.energize:
-    emulated_hue_name: "All - Energize"
-    emulated_hue: true

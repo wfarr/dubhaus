@@ -24,7 +24,7 @@ notify slack: !include slack.yaml
 light hue: !include hue.yaml
 #ecobee: !include ecobee.yaml
 nest: !include nest.yaml
-emulated_hue: !include emulated_hue.yaml
+#emulated_hue: !include emulated_hue.yaml
 #sleepiq: !include sleepiq.yaml
 media_player: !include media_players.yaml
 sensor darksky: !include darksky.yaml 
@@ -41,3 +41,6 @@ switch house modes: !include template_switches.yaml
 # switch cheer: !include christmas-cheer-switch.yaml
 
 zwave: !include zwave.yaml
+
+
+customize: !include_dir_merge_named customize

@@ -1,0 +1,45 @@
+---
+
+### Downstairs
+
+light.living_room:
+  friendly_name: Living Room Lights
+  alexa_name: Living Room Lights
+  homebridge_name: Living Room Lights
+
+light.kitchen:
+  friendly_name: Kitchen Lights
+  alexa_name: Kitchen Lights
+  homebridge_name: Kitchen Lights
+
+light.dining_room:
+  friendly_name: Dining Room Lights
+  alexa_name: Dining Room Lights
+  homebridge_name: Dining Room Lights
+
+light.entryway:
+  friendly_name: Entryway Lights
+  alexa_name: Entryway Lights
+  homebridge_name: Entryway Lights
+
+### Upstairs
+
+light.master_bedroom:
+  friendly_name: Master Bedroom Lights
+  alexa_name: Master Bedroom Lights
+  homebridge_name: Master Bedroom Lights
+
+light.guest_bedroom:
+  friendly_name: Guest Bedroom Lights
+  alexa_name: Guest Bedroom Lights
+  homebridge_name: Guest Bedroom Lights
+
+light.upstairs_landing:
+  friendly_name: Upstairs Lights
+  alexa_name: Upstairs Lights
+  homebridge_name: Upstairs Lights
+
+light.upper_stairs:
+  friendly_name: Upper Stairs Lights
+  alexa_name: Upper Stairs Lights
+  homebridge_name: Upper Stairs Lights
