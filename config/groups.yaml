@@ -88,62 +88,56 @@ upstairs:
 entryway:
   name: Entryway
   entities:
-  - group.entryway_lights
+  - light.entryway
 
 kitchen:
   name: Kitchen
   entities:
-  - group.kitchen_lights
+  - light.kitchen
   - media_player.sonos_kitchen
 
 living_room:
   name: Living Room
   entities:
   - media_player.living_room_tv
-  - group.living_room_lights
+  - light.living_room
   - climate.living_room
 
 dining_room:
   name: Dining Room
   entities:
-  - group.dining_room_lights
+  - light.dining_room
 
 basement:
   # nothing yet
 
 stairs:
-  name: Stairs
+  name: Upper Stairs
   entities:
-  - group.upper_stairway_lights
+  - light.upper_stairs
 
 upstairs_landing:
   name: Upstairs Landing
   entities:
-  - group.upstairs_landing_lights
+  - light.upstairs_landing
   - climate.upstairs
 
 master_bedroom:
   view: yes
   name: Master Bedroom
   entities:
-  - group.master_bedroom_lights
+  - light.master_bedroom
   - media_player.sonos_master_bedroom
 
 guest_bedroom:
   view: yes
   name: Guest Bedroom
   entities:
-  - group.guest_bedroom_lights
+  - light.guest_bedroom
 
 ############################
 ########## LIGHTS ##########
 ############################
-
-all_lights:
-  name: All Lights
-  entities:
-  - group.upstairs_lights
-  - group.downstairs_lights
 
 upstairs_lights:
   name: Upstairs Lights
