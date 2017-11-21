@@ -10,5 +10,16 @@ alexa:
       - automation
       - group
       - alert
+    include_entities:
+      - light.entryway
+      - light.dining_room
+      - light.kitchen
+      - light.living_room
+      - light.upper_stairs
+      - light.upstairs_landing
+      - light.master_bedroom
+      - light.guest_bedroom
+      - group.upstairs_lights
+      - group.downstairs_lights
     # include_domains:
     #   - light
