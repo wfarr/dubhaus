@@ -1,6 +1,6 @@
-name: Gaming Mode
-entities:
-  group.downstairs_lights:
-    state: on
-    brightness: 142
-    rgb_color: [255, 95, 73]
+# name: Gaming Mode
+# entities:
+#   group.downstairs_lights:
+#     state: on
+#     brightness: 142
+#     rgb_color: [255, 95, 73]
