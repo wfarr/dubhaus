@@ -1,7 +1,8 @@
 sequence:
-- service: scene.turn_on
+- service: light.hue_activate_scene
   data_template:
-    entity_id: "scene.{{scene}}"
+    group_name: "All Hue Lights"
+    scene_name: "{{scene}}"
 - service: notify.slack
   data_template:
     message: "{{message}}"
