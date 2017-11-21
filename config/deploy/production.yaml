@@ -2,6 +2,11 @@ homeassistant: !include homeassistant.yaml
 
 cloud: !include cloud.yaml
 
+logger:
+  default: info
+  logs:
+    homeassistant.components.cloud: debug
+
 #discovery:
 frontend:
 history:
