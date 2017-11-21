@@ -10,6 +10,8 @@ alexa:
       - automation
       - group
       - alert
+      - lock
+      - sensor
     include_entities:
       - light.entryway
       - light.dining_room
