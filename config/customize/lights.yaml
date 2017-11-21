@@ -43,3 +43,10 @@ light.upper_stairs:
   friendly_name: Upper Stairs Lights
   alexa_name: Upper Stairs Lights
   homebridge_name: Upper Stairs Lights
+
+### everything
+
+light.all_hue_lights:
+  friendly_name: All Lights
+  alexa_name: All Lights
+  homebridge_name: All Lights

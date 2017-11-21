@@ -24,5 +24,6 @@ alexa:
       - light.guest_bedroom
       - group.upstairs_lights
       - group.downstairs_lights
+      - light.all_hue_lights
     # include_domains:
     #   - light
