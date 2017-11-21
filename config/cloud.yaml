@@ -1,15 +1,14 @@
 ---
-cloud:
-  mode: development
-  cognito_client_id: !secret cloud_cognito_client_id
-  user_pool_id: !secret cloud_user_pool_id
-  region: !secret cloud_region
-  relayer: !secret cloud_relayer
-  alexa:
-    filter:
-      exclude_domains:
-        - automation
-        - group
-        - alert
-      include_domains:
-        - light
+mode: development
+cognito_client_id: !secret cloud_cognito_client_id
+user_pool_id: !secret cloud_user_pool_id
+region: !secret cloud_region
+relayer: !secret cloud_relayer
+alexa:
+  filter:
+    exclude_domains:
+      - automation
+      - group
+      - alert
+    include_domains:
+      - light

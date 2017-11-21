@@ -14,8 +14,7 @@ scene directory: !include_dir_list scenes
 script: !include_dir_named scripts
 automation: !include_dir_merge_list automations
 
-config:
-  cloud: !include cloud.yaml
+cloud: !include cloud.yaml
 
 http: !include http.yaml
 #mqtt: !include mqtt.yaml
