@@ -35,9 +35,9 @@ light.guest_bedroom:
   homebridge_name: Guest Bedroom Lights
 
 light.upstairs_landing:
-  friendly_name: Upstairs Lights
-  alexa_name: Upstairs Lights
-  homebridge_name: Upstairs Lights
+  friendly_name: Upstairs Landing Lights
+  alexa_name: Upstairs Landing Lights
+  homebridge_name: Upstairs Landing Lights
 
 light.upper_stairs:
   friendly_name: Upper Stairs Lights
