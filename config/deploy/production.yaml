@@ -1,5 +1,6 @@
 homeassistant: !include homeassistant.yaml
 
+config:
 cloud: !include cloud.yaml
 
 logger:
