@@ -10,5 +10,5 @@ alexa:
       - automation
       - group
       - alert
-    include_domains:
-      - light
+    # include_domains:
+    #   - light
