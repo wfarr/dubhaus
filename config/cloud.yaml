@@ -12,6 +12,33 @@ alexa:
       - alert
       - lock
       - sensor
+    exclude_entities:
+      - light.dining_room_fixture_1
+      - light.dining_room_fixture_2
+      - light.dining_room_lamp_1
+      - light.dining_room_lamp_2
+      - light.dining_room_lamp_3
+      - light.guest_bedroom_1
+      - light.guest_bedroom_2
+      - light.guest_bedroom_3
+      - light.kitchen_1
+      - light.kitchen_2
+      - light.kitchen_3
+      - light.kitchen_4
+      - light.kitchen_island_1
+      - light.kitchen_island_2
+      - light.living_room_1
+      - light.living_room_2
+      - light.living_room_floor_lamp
+      - light.lower_stairs_top_1
+      - light.lower_stairs_top_2
+      - light.master_bedroom_1
+      - light.master_bedroom_2
+      - light.upper_stairway
+      - light.upstairs_landing_1
+      - light.upstairs_landing_2
+      - light.upstairs_landing_3
+      - light.upstairs_landing_4
     include_entities:
       - light.entryway
       - light.dining_room
