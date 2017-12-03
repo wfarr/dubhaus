@@ -1,7 +1,35 @@
 sequence:
 - service: light.hue_activate_scene
   data_template:
-    group_name: "All Hue Lights"
+    group_name: "Living Room"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Dining Room"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Kitchen"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Entryway"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Master Bedroom"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Guest Bedroom"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Upstairs Landing"
+    scene_name: "{{scene}}"
+- service: light.hue_activate_scene
+  data_template:
+    group_name: "Upper Stairs"
     scene_name: "{{scene}}"
 - service: notify.slack
   data_template:
