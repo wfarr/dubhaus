@@ -8,7 +8,7 @@ logger:
   logs:
     homeassistant.components.cloud: debug
 
-#discovery:
+discovery:
 frontend:
 history:
 logbook:
