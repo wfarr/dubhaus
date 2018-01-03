@@ -1,4 +1,5 @@
 ---
-platform: hue
-host: !secret hue_light_host
+bridges:
+  - !secret hue_light_host
 allow_unreachable: true
+allow_hue_groups: true

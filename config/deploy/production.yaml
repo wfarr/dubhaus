@@ -8,7 +8,7 @@ logger:
   logs:
     homeassistant.components.cloud: debug
 
-discovery:
+#discovery:
 frontend:
 history:
 logbook:
@@ -29,7 +29,7 @@ notify slack: !include slack.yaml
 
 #device_tracker: !include device_trackers.yaml
 #input_select: !include input_selects.yaml
-light hue: !include hue.yaml
+hue: !include hue.yaml
 #ecobee: !include ecobee.yaml
 nest: !include nest.yaml
 #emulated_hue: !include emulated_hue.yaml
