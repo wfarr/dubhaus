@@ -1,5 +1,5 @@
 ---
 bridges:
   - host: !secret hue_light_host
-allow_unreachable: true
-allow_hue_groups: true
+    allow_unreachable: true
+    allow_hue_groups: true
