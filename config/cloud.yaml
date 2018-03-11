@@ -1,5 +1,58 @@
 ---
 alexa:
+  entity_config:
+    group.upstairs_lights:
+      name: "Upstairs Lights"
+      description: "Upstairs Lights"
+      display_categories: "LIGHT"
+    group.downstairs_lights:
+      name: "Downstairs Lights"
+      description: "Downstairs Lights"
+      display_categories: "LIGHT"
+    light.living_room:
+      name: "Living Room Lights"
+      description: "Living Room Lights"
+      display_categories: "LIGHT"
+    light.kitchen:
+      name: "Kitchen Lights"
+      description: "Kitchen Lights"
+      display_categories: "LIGHT"
+    light.dining_room:
+      name: "Dining Room Lights"
+      description: "Dining Room Lights"
+      display_categories: "LIGHT"
+    light.entryway:
+      name: "Entryway Lights"
+      description: "Entryway Lights"
+      display_categories: "LIGHT"
+    light.master_bedroom:
+      name: "Master Bedroom Lights"
+      description: "Master Bedroom Lights"
+      display_categories: "LIGHT"
+    light.guest_bedroom:
+      name: "Guest Bedroom Lights"
+      description: "Guest Bedroom Lights"
+      display_categories: "LIGHT"
+    light.upstairs_landing:
+      name: "Upstairs Landing Lights"
+      description: "Upstairs Landing Lights"
+      display_categories: "LIGHT"
+    light.upper_stairs_landing:
+      name: "Upper Stairs Lights"
+      description: "Upper Stairs Lights"
+      display_categories: "LIGHT"
+    light.all_hue_lights:
+      name: "All Lights"
+      description: "All Lights"
+      display_categories: "LIGHT"
+    climate.living_room:
+      name: "Living Room Nest"
+      description: "Living Room Nest"
+      display_categories: "THERMOSTAT"
+    climate.upstairs:
+      name: "Upstairs Nest"
+      description: "Living Room Nest"
+      display_categories: "THERMOSTAT"
   filter:
     exclude_domains:
       - automation
